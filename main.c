@@ -258,6 +258,13 @@ int y=3;             // level, goal, score만 게임중에 값이 바뀔수 도 
     gotoxy(STATUS_X_ADJ, y+17); printf("  ▽   : Soft Drop     ESC  : Quit");
     gotoxy(STATUS_X_ADJ, y+20);printf("blog.naver.com/azure0777");
 }
+
+void draw_map(void) {
+	int y = 3;
+	
+		gotoxy(STATUS_X_ADJ, STATUS_Y_LEVEL = y);
+	printf(" Level : #5d", level);
+}
  
 void draw_main(void){ //게임판 그리는 함수 
     int i, j;    
@@ -671,6 +678,13 @@ void pause(void){ //게임 일시정지 함수
             }
         }
     }    
+}
+
+int this_test(void) {
+	printf("test FUnction and Study");
+	
+	return 0;
+	
 }
 
 //출처: https://m.blog.naver.com/azure0777/220295388741
